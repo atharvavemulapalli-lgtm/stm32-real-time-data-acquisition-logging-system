@@ -142,12 +142,17 @@ Time(ms),ADC Value,PWM Duty,Temperature(C),Humidity(%),System Mode,LED Mode
 
 ```
 .
+stm32-real-time-data-acquisition-logging-system
+│
 ├── Core/
 ├── Drivers/
 ├── README.md
-├── Images/
-├── Docs/
-└── Results/
+├── Data_Acquisition.ioc
+├── .project
+├── .cproject
+├── .mxproject
+├── STM32F446RETX_FLASH.ld
+└── STM32F446RETX_RAM.ld
 ```
 
 ---
