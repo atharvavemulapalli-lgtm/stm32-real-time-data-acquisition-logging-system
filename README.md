@@ -15,7 +15,7 @@ The system periodically acquires ambient light intensity, temperature, and humid
 - Temperature and humidity measurement using a DHT11 sensor
 - RGB LED control using PWM
 - UART-based CSV data logging
-- Push-button controlled LED colour selection
+- On-board USER button controlled LED colour selection
 - UART command-based operating mode selection
 - Real-time environmental monitoring
 - Two operating modes:
@@ -43,6 +43,18 @@ The system periodically acquires ambient light intensity, temperature, and humid
 - STM32 HAL (Hardware Abstraction Layer)
 - PuTTY (Serial Terminal)
 - Microsoft Excel (CSV visualization)
+
+---
+
+## System Architecture
+
+![System Block Diagram](Images/block_diagram.png)
+
+---
+
+## Hardware Setup
+
+![Hardware Setup](Images/hardware_setup.jpeg)
 
 ---
 
@@ -89,6 +101,8 @@ The operating mode can be changed at runtime through UART commands without repro
 
 ## Results
 
+![UART Output](Images/uart_output.png)
+
 The system successfully demonstrates:
 
 - Periodic real-time acquisition of environmental data
@@ -99,14 +113,12 @@ The system successfully demonstrates:
 
 Example CSV output:
 
-```text
-Time(ms),ADC Value,PWM Duty,Temperature(C),Humidity(%),System Mode,LED Mode
-0,2010,4908,28,63,LIGHT,WHITE
-1000,2123,5182,28,63,LIGHT,RED
-2000,2098,5121,29,64,TEMP,-
-```
+![CSV Output](Images/csv_output.png)
 
----
+Example graph generated from the logged sensor data.
+
+![ADC Graph](Images/csv_graph.png)
+
 
 ## Skills Demonstrated
 
@@ -146,11 +158,11 @@ stm32-real-time-data-acquisition-logging-system
 │
 ├── Core/
 ├── Drivers/
+├── Images/
+├── Results/
+├── Docs/
 ├── README.md
 ├── Data_Acquisition.ioc
-├── .project
-├── .cproject
-├── .mxproject
 ├── STM32F446RETX_FLASH.ld
 └── STM32F446RETX_RAM.ld
 ```
