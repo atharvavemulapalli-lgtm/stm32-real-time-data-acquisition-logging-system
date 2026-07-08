@@ -54,7 +54,7 @@ The system periodically acquires ambient light intensity, temperature, and humid
 
 ## Hardware Setup
 
-![Hardware Setup](Images/hardware_setup.jpeg)
+![Hardware Setup](Images/hardware_setup_stm32.jpeg)
 
 ---
 
